@@ -12,20 +12,22 @@
 		<input type="text" id="b0" value="B" style="text-align:center;" disabled>
 		<input type="text" id="c0" value="C" style="text-align:center;" disabled>
 		<input type="text" id="d0" value="D" style="text-align:center;" disabled>
+		<input type="text" id="o_0" value="Output" style="text-align:center;" disabled>
 		<br />
 		<input type="text" id="01" value="1" style="text-align:center;" disabled>
-		<input type="text" id="a1">
-		<input type="text" id="b1">
-		<input type="text" id="c1">
-		<input type="text" id="d1">
+		<input type="number" id="a1">
+		<input type="number" id="b1">
+		<input type="number" id="c1">
+		<input type="number" id="d1">
+		<input type="number" id="o_1" style="text-align:center;" disabled>
 		<button id="r1btn" onclick="SumRow1()">Sum This Row</button>
-		<!-- <p id="p1">Sum</p> -->
 		<br />
 		<input type="text" id="02" value="2" style="text-align:center;" disabled>
 		<input type="text" id="a2">
 		<input type="text" id="b2">
 		<input type="text" id="c2">
 		<input type="text" id="d2">
+		<input type="text" id="o_2" style="text-align:center;" disabled>
 		<button id="r2btn">Sum This Row</button>
 		<br />
 		<input type="text" id="03" value="3" style="text-align:center;" disabled>
@@ -33,6 +35,7 @@
 		<input type="text" id="b3">
 		<input type="text" id="c3">
 		<input type="text" id="d3">
+		<input type="text" id="o_3" style="text-align:center;" disabled>
 		<button id="r3btn">Sum This Row</button>
 		<br />
 		<input type="text" id="04" value="4" style="text-align:center;" disabled>
@@ -40,6 +43,7 @@
 		<input type="text" id="b4">
 		<input type="text" id="c4">
 		<input type="text" id="d4">
+		<input type="text" id="o_4" style="text-align:center;" disabled>
 		<button id="r4btn">Sum This Row</button>
 		
 		<script type="text/javascript">
@@ -52,14 +56,14 @@
 		//document.write(mean)
 		//}
 		function SumRow1(){
-		//var total = 0;
-		//var cell1 = document.getElementByID("a1").value;
-		//var cell2 = document.getElementByID("b1").value;
-		//var cell3 = document.getElementByID("c1").value; 
-		//var cell4 = document.getElementByID("d1").value; 
-		//total = cell1 + cell2 + cell3 + cell4;
+		var total = 0;
+		var cell1 = document.getElementByID("a1").value;
+		var cell2 = document.getElementByID("b1").value;
+		var cell3 = document.getElementByID("c1").value; 
+		var cell4 = document.getElementByID("d1").value; 
+		total = cell1 + cell2 + cell3 + cell4;
 		
-		document.getElementByID("p1").innerHTML = "total";
+		document.getElementByID("o_1").value = total;
 		}
 		</script>
 	</body>
